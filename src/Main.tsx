@@ -8,17 +8,21 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
+import Header from './components/Header';
+import Toolbar from '@mui/material/Toolbar';
 
 const Main = (): ReactElement => {
   return (
     <ThemeProvider theme={theme}>
+      <Header />
+      <Toolbar />
       <Box style={{ fontFamily: 'Raleway' }} sx={{ backgroundColor: 'var(--background)', minHeight: '100vh' }}>
         <Container sx={{ display: 'flex', justifyContent: 'center' }}>
           <Grid container spacing={2} sx={{ margin: '1rem 0' }}>
             <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <Box display="flex" alignItems="center">
                 <AndroidIcon sx={{ fontSize: 30, color: 'var(--secondary)', marginRight: 2 }} />
-                <Typography variant="h6" style={{color: theme.palette.secondary.main, fontWeight: 500}}>
+                <Typography variant="h6" style={{color: theme.palette.primary.main, fontWeight: 500}}>
                   ANDROID DEVELOPER
                 </Typography>
               </Box>
