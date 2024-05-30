@@ -10,15 +10,19 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import Header from './components/Header';
 import Toolbar from '@mui/material/Toolbar';
+import ExperienceScreen from './components/ExperienceView';
+import ProjectsScreen from './components/ProjectsView';
+import AboutMeScreen from './components/AboutMeView';
+import ContactScreen from './components/ContactView';
 
 const Main = (): ReactElement => {
   return (
     <ThemeProvider theme={theme}>
       <Header />
       <Toolbar />
-      <Box style={{ fontFamily: 'Raleway' }} sx={{ backgroundColor: 'var(--background)', minHeight: '100vh' }}>
-        <Container sx={{ display: 'flex', justifyContent: 'center' }}>
-          <Grid container spacing={2} sx={{ margin: '1rem 0' }}>
+      <Box style={{ fontFamily: 'Raleway' }} sx={{ backgroundColor: 'var(--background)', minHeight: '100vh', margin: '1rem 0' }}>
+        <Container id='home' sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Grid container spacing={2}>
             <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <Box display="flex" alignItems="center">
                 <AndroidIcon sx={{ fontSize: 30, color: 'var(--secondary)', marginRight: 2 }} />
@@ -57,7 +61,19 @@ const Main = (): ReactElement => {
             <Grid item xs={12} md={6}>
               <img src={jp} alt="logo" width="100%" />
             </Grid>
-          </Grid>
+          </Grid>        
+        </Container>
+        <Container id='experience' sx={{ display: 'flex', justifyContent: 'center' }}>          
+          <ExperienceScreen />
+        </Container>
+        <Container id='projects' sx={{ display: 'flex', justifyContent: 'center' }}>
+          <ProjectsScreen />
+        </Container>
+        <Container id='aboutme' sx={{ display: 'flex', justifyContent: 'center' }}>
+          <AboutMeScreen />
+        </Container>
+        <Container id='contact' sx={{ display: 'flex', justifyContent: 'center' }}>
+          <ContactScreen />
         </Container>
       </Box>
     </ThemeProvider>
