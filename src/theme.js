@@ -1,22 +1,34 @@
 import { createTheme } from '@mui/material/styles';
 
+const primaryColor = '#3B8BEB';
+const secondaryColor = '#3B8BEB';
+const accentColor = '#CFE4BA';
+const primaryTextColor = '#334155';
+
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#3B8BEB',
+            main: primaryColor,
         },
         secondary: {
-          main: '#CFE4BA',
+          main: secondaryColor,
+        },
+        accent: {
+          main: accentColor,
         },
     },
     typography: {
       fontFamily: 'Raleway, Arial, sans-serif',
       h1: {
         fontWeight: 500,
-        color: '#334155',
+        color: primaryTextColor,
+      },
+      h2: {
+        fontWeight: 500,
+        color: secondaryColor,
       },
       body1: {
-        color: '#334155',
+        color: primaryTextColor,
       },
     },
   });
