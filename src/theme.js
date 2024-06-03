@@ -27,6 +27,10 @@ const theme = createTheme({
         fontWeight: 500,
         color: secondaryColor,
       },
+      h6: {
+        fontWeight: 800,
+        color: secondaryColor,
+      },
       body1: {
         color: primaryTextColor,
       },
