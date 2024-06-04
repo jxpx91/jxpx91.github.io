@@ -19,8 +19,8 @@ const Main = (): ReactElement => {
       <Box style={{ fontFamily: 'Raleway' }} sx={{ backgroundColor: 'var(--background)', minHeight: '100vh' }}>
         <Container id='home' sx={{ display: 'flex', justifyContent: 'center', paddingTop: 4 }}>
           <HomeScreen />   
-        </Container>
-        <Container id='aboutme' sx={{ display: 'flex', justifyContent: 'center', paddingTop: 10 }}>          
+        </Container>        
+        <Container id='aboutme' maxWidth={false} sx={{ width: '100%', justifyContent: 'center', paddingTop: 10, paddingLeft: '0 !important', paddingRight: '0 !important' }}>
           <AboutMeScreen />
         </Container>
         <Container id='projects' sx={{ display: 'flex', justifyContent: 'center', paddingTop: 10 }}>
