@@ -4,6 +4,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import droid from '../assets/images/droid.png'
 
 function Header() {
     const [selectedSection, setSelectedSection] = useState('home');
@@ -15,7 +16,8 @@ function Header() {
     return (
         <AppBar position="fixed">
             <Toolbar>
-                <Box sx={{ width:'100%', display: 'flex', justifyContent: 'center', gap: 8 }}>                    
+                <img src={droid} alt="logo" style={{height: '50px', marginRight: 'auto'}} />
+                <Box sx={{ width:'auto', display: 'flex', justifyContent: 'flex-end', gap: 8 }}>                    
                     <Button 
                         sx={{ 
                             backgroundColor: selectedSection === 'home' ? 'accent.main' : 'inherit',                        
