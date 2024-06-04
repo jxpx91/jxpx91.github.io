@@ -29,7 +29,7 @@ const Main = (): ReactElement => {
         <Container id='skills' sx={{ display: 'flex', justifyContent: 'center', paddingTop: 10 }}>
           <SkillsScreen />
         </Container>        
-        <Container id='contact' sx={{ display: 'flex', justifyContent: 'center', paddingTop: 10 }}>
+        <Container id='contact' maxWidth={false} sx={{ width: '100%', justifyContent: 'center', paddingTop: 10, paddingLeft: '0 !important', paddingRight: '0 !important' }}>
           <ContactScreen />
         </Container>
       </Box>
