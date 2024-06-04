@@ -4,6 +4,7 @@ const primaryColor = '#3B8BEB';
 const secondaryColor = '#3B8BEB';
 const accentColor = '#CFE4BA';
 const primaryTextColor = '#334155';
+const backgroundDark = '#1F2937';
 
 const theme = createTheme({
     palette: {
@@ -15,6 +16,9 @@ const theme = createTheme({
         },
         accent: {
           main: accentColor,
+        },
+        background: {
+          dark: backgroundDark,
         },
     },
     typography: {

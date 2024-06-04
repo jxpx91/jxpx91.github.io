@@ -6,7 +6,7 @@ import theme from './theme';
 import Header from './components/Header';
 import Toolbar from '@mui/material/Toolbar';
 import HomeScreen from './components/HomeView';
-import ExperienceScreen from './components/ExperienceView';
+import SkillsScreen from './components/SkillsView';
 import ProjectsScreen from './components/ProjectsView';
 import AboutMeScreen from './components/AboutMeView';
 import ContactScreen from './components/ContactView';
@@ -25,6 +25,9 @@ const Main = (): ReactElement => {
         </Container>
         <Container id='projects' sx={{ display: 'flex', justifyContent: 'center', paddingTop: 10 }}>
           <ProjectsScreen />
+        </Container>        
+        <Container id='skills' sx={{ display: 'flex', justifyContent: 'center', paddingTop: 10 }}>
+          <SkillsScreen />
         </Container>        
         <Container id='contact' sx={{ display: 'flex', justifyContent: 'center', paddingTop: 10 }}>
           <ContactScreen />

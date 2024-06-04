@@ -45,6 +45,15 @@ function Header() {
                     </Button>
                     <Button 
                         sx={{ 
+                            backgroundColor: selectedSection === 'skills' ? 'accent.main' : 'inherit',                        
+                        }}
+                        color= 'inherit'
+                        href="#skills"
+                        onClick={() => handleButtonClick('skills')}>
+                        Skills
+                    </Button>
+                    <Button 
+                        sx={{ 
                             backgroundColor: selectedSection === 'contact' ? 'accent.main' : 'inherit',                        
                         }}
                         color= 'inherit'
